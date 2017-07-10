@@ -3,29 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzcell</string>
+	<string>initWithStyleForCell</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *ID = @"&lt;#cell#&gt;";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+	<string>- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        &lt;#code#&gt;
     }
-    cell.textLabel.text = &lt;#other#&gt;;
-    return cell;
+    return self;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6747AA45-0E01-4825-8D68-443763C5C58B</string>
+	<string>BF5695D8-5243-4DC2-8153-82B8858295AC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>tableViewCell</string>
+	<string>UITableViewCell的默认初始化方法</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>tableViewCell</string>
+	<string>initWithStyle:reuseIdentifier:</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,29 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzcell</string>
+	<string>setFrame_QMUI</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *ID = @"&lt;#cell#&gt;";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-    }
-    cell.textLabel.text = &lt;#other#&gt;;
-    return cell;
-}</string>
+	<string>&lt;#view#&gt;.frame = CGRectFlatMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;, &lt;#CGFloat width#&gt;, &lt;#CGFloat height#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6747AA45-0E01-4825-8D68-443763C5C58B</string>
+	<string>0E66F758-D976-483F-A71A-1B94A8ADA34A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>tableViewCell</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>tableViewCell</string>
+	<string>set UIView frame with QMUI CGRectFlatMake</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
