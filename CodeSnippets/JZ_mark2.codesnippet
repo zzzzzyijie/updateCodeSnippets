@@ -3,22 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzdict</string>
+	<string>jzmmark</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (instancetype)initWithDict:(NSDictionary *)dict;
-+ (instancetype)&lt;#name#&gt;WithDict:(NSDictionary *)dict;</string>
+	<string>#pragma mark - ============== &lt;#content#&gt; ============</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>DADB91A1-AEBD-4C5F-A708-3E98C61BDD8A</string>
+	<string>5C17044C-DF6E-4FB9-B72D-6EF4470CE671</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>字典转模型类工厂方法</string>
+	<string>分割线注释</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>initWithDict</string>
+	<string>分割线注释</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
