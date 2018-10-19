@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzcaches</string>
+	<string>jzpushvc</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject]</string>
+	<string>
+&lt;#content#&gt; *vc = [[&lt;#contetn#&gt; alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A3E42834-1799-41E5-89C2-49EB8B801194</string>
+	<string>16F1F6F1-877B-47F7-9CC4-0E59F62CD9A8</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>缓存路径</string>
+	<string>push viewController</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>沙盒caches路径</string>
+	<string>push viewController</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

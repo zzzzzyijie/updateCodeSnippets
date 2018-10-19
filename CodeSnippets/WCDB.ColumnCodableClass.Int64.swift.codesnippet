@@ -3,25 +3,33 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzdict</string>
+	<string>ColumnCodable Int64 Class</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (instancetype)initWithDict:(NSDictionary *)dict;
-+ (instancetype)&lt;#name#&gt;WithDict:(NSDictionary *)dict;</string>
+	<string>class &lt;#Class name#&gt;: WCDBSwift.ColumnCodable {
+    typealias FundamentalType = Int64
+    
+    required init?(with value: Int64) {
+        
+    }
+    
+    func archivedValue() -&gt; Int64? {
+        
+    }
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>DADB91A1-AEBD-4C5F-A708-3E98C61BDD8A</string>
+	<string>BD03E1A2-9D1B-432B-B7B8-4AD3BC19023C</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>字典转模型类工厂方法</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>initWithDict</string>
+	<string>ColumnCodable Int64 Snippet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

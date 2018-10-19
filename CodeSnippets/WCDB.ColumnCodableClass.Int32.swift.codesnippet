@@ -3,24 +3,33 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>JZFormat</string>
+	<string>ColumnCodable Int32 Class</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[NSString stringWithFormat:&lt;#(nonnull NSString *), ...#&gt;];</string>
+	<string>class &lt;#Class name#&gt;: WCDBSwift.ColumnCodable {
+    typealias FundamentalType = Int32
+    
+    required init?(with value: Int32) {
+        
+    }
+    
+    func archivedValue() -&gt; Int32? {
+        
+    }
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9647B51E-0B0F-449A-B5F3-C7CA23E2F6B2</string>
+	<string>BD03E1A2-9D1B-432B-B7B8-4AD3BC19023C</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>JZFormat</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>stringFormat</string>
+	<string>ColumnCodable Int32 Snippet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

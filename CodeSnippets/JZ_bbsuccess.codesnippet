@@ -3,27 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzlazy</string>
+	<string>bbsuccess</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- &lt;#name#&gt;
-{
-    if (!_&lt;#name#&gt;) {
-        _&lt;#name#&gt; = &lt;#other#&gt;;
-    }
-    return _&lt;#name#&gt;;
-}</string>
+	<string> [weakSelf jz_hide];
+        if ([HttpTool isSuccess:responseObject]) {
+            
+        }else{
+            [weakSelf jz_showHint:responseObject[@"message"]];
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E1534E67-ACE6-41D3-8F8A-94CE9CD82CF7</string>
+	<string>FB5EE0B7-0820-4044-BD2B-8D6E4913E75C</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>懒加载</string>
+	<string>请求成功的一般代码逻辑</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>lazy</string>
+	<string>请求成功</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

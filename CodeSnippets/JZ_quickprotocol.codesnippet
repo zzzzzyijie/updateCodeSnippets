@@ -3,21 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>JZIMAGE</string>
+	<string>jzquickprotocol</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[UIImage imageNamed:&lt;#(nonnull NSString *)#&gt;]</string>
+	<string>@class &lt;#contetn#&gt;;
+@protocol &lt;#&lt;content#&gt;Delegate &lt;NSObject&gt;
+@optional
+- (void)&lt;#content#&gt;:(&lt;#content#&gt; *)view DidTap&lt;#content#&gt;:(&lt;#view#&gt;*)targetView;
+@end</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>65905C28-3845-49A9-A508-82ED25A1BE61</string>
+	<string>E48CA44E-AFA9-48EB-AECB-290765EDA87D</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>JZIMAGE</string>
+	<string>QuickProtocol</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>iamge</string>
+	<string>QuickProtocol</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzmmark</string>
+	<string>jzquickimageview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - =========================== &lt;#content#&gt; ===================================</string>
+	<string>UIImageView *&lt;#name#&gt; = ({
+    UIImageView *&lt;#name#&gt; = [[UIImageView alloc] init];
+    &lt;#name#&gt;;
+});
+[&lt;#view#&gt; addSubview:&lt;#name#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5C17044C-DF6E-4FB9-B72D-6EF4470CE671</string>
+	<string>84462E67-2F7D-47C1-AB06-998787F08733</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>分割线注释</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>分割线注释</string>
+	<string>Quick init ImageView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

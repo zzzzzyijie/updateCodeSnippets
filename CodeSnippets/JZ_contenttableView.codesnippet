@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jzcontenttableView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> // tableView
+    CGRect tableViewRect = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 64);
+    UITableView *contentTableView = ({
+        UITableView *contentTableView = [[UITableView alloc] initWithFrame:tableViewRect style:UITableViewStylePlain];
+        contentTableView.frame = tableViewRect;
+        contentTableView.showsVerticalScrollIndicator = NO;
+        contentTableView.showsHorizontalScrollIndicator = NO;
+        contentTableView.alwaysBounceVertical = YES;
+        contentTableView.backgroundColor = COLOR_BG;
+        contentTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        contentTableView.delegate = self;
+        contentTableView.dataSource = self;
+        self.contentTableView = contentTableView;
+        contentTableView;
+    });
+    [self.view addSubview:contentTableView];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6D9FA25D-50BA-4053-A003-2C3A4F98BFBC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>TableView </string>
+	<key>IDECodeSnippetTitle</key>
+	<string>JZContentTableView Quick Create</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

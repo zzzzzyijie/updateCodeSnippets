@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzinit</string>
+	<string>jzdelegatecall</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (instancetype)initWithDict:(NSDictionary *)dict;</string>
+	<string>if (self.delegate &amp;&amp; [self.delegate respondsToSelector:@selector(&lt;#content#&gt;)]) {
+    [self.delegate &lt;#contetn#&gt;];
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>DF7FDC07-F597-40EA-BFD6-8D29E3D64A54</string>
+	<string>B5198C77-EE3E-46F6-A639-43F99C3F599E</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>字典转模型对象方法</string>
+	<string>Delegate Call</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>initWithDict</string>
+	<string>Delegate Call</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

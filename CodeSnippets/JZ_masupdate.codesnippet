@@ -3,20 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzweak</string>
+	<string>jzmasupdate</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/** &lt;#content#&gt; */
-@property (nonatomic,weak) &lt;#type#&gt; *&lt;#name#&gt;;</string>
+	<string>[&lt;#view#&gt; mas_updateConstraints:^(MASConstraintMaker *make) {
+    &lt;#contetn#&gt;
+    }];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C199A570-4A0B-4F71-B05C-2C4D405741D2</string>
+	<string>AF08FE6B-31A1-4B20-BB03-EB8D666E7BCC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>jzmasupdate</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>weak</string>
+	<string>JZ masnory - 自动布局2</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

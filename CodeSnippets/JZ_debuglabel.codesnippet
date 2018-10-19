@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzself</string>
+	<string>jzdebuglabel</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__weak typeof(self) weakSelf = self;</string>
+	<string>#ifdef DEBUG
+    [self testLabelText];
+#endif</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>6C28E783-6A86-451E-83D9-43114B109ECD</string>
+	<string>81AA43DE-FD71-400B-B81B-B970339A14FB</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>弱引用</string>
+	<string>DEBUG TextLabel</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>弱引用</string>
+	<string>DEBUG TextLabel</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

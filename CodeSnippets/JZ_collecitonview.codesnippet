@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>jzcollecitonview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>JZCollectionView *collectionView = ({
+        // 靠左排列的布局Layout
+        UICollectionViewLeftAlignedLayout *layout = [[UICollectionViewLeftAlignedLayout alloc] init];
+        NSInteger colNums = 3; // 每行cell的个数
+        CGFloat spacing = 10; // 统一的间距
+        CGFloat cellW = (SCREEN_WIDTH - (colNums + 1.5) * spacing) / colNums; // 宽度 (1.5为控制边界值)
+        CGFloat cellH = 30; // 高度
+        layout.itemSize = CGSizeMake(cellW, cellH);
+        layout.minimumInteritemSpacing = spacing; // 设置cell之间间距
+        layout.minimumLineSpacing = spacing; // 设置行距
+        layout.sectionInset = UIEdgeInsetsMake(5, spacing, 5, spacing);// 设置每一组的内间距
+        layout.scrollDirection = UICollectionViewScrollDirectionVertical; // 滚动方向
+        
+        JZCollectionView *collectionView = [[JZCollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+        self.collectionView = collectionView;
+        collectionView.backgroundColor = JZWHITE;
+        collectionView.delegate = self;
+        collectionView.dataSource = self;
+        collectionView.allowsSelection = YES;
+        collectionView.delaysContentTouches = NO;
+        collectionView.alwaysBounceVertical = YES;
+        collectionView.showsVerticalScrollIndicator = YES;
+        collectionView.showsHorizontalScrollIndicator = YES;
+        collectionView;
+    });
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>546AFA6D-544A-42D1-B678-0D6E27F6A05A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>jzcollecitonview</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>JZColectionView - quick init</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

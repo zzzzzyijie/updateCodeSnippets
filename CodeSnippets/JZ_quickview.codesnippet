@@ -3,19 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzmark</string>
+	<string>jzquickview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark &lt;#name#&gt;</string>
+	<string>UIView *&lt;#name#&gt; = ({
+       UIView *&lt;#name#&gt; = [[UIView alloc] init];
+        &lt;#name#&gt;;
+    });
+    [&lt;#view#&gt; addSubview:&lt;#name#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0DA1732F-9D4F-48C3-BE6C-574D87A09956</string>
+	<string>B43F0A01-B5EF-4ABF-9F6F-DA4E919E7187</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Mark标记</string>
+	<string>Quick init View</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

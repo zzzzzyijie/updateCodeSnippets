@@ -3,23 +3,33 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzcopy</string>
+	<string>ColumnCodable Double Class</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/** &lt;#content#&gt; */
-@property (nonatomic,copy) &lt;#type#&gt; *&lt;#name#&gt;</string>
+	<string>class &lt;#Class name#&gt;: WCDBSwift.ColumnCodable {
+    typealias FundamentalType = Double
+    
+    required init?(with value: Double) {
+        
+    }
+    
+    func archivedValue() -&gt; Double? {
+        
+    }
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>96391847-95CB-4160-9D38-6462C951D69C</string>
+	<string>BD03E1A2-9D1B-432B-B7B8-4AD3BC19023C</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>copy</string>
+	<string>ColumnCodable Double Snippet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzmark</string>
+	<string>jzmasmake</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: - &lt;#content#&gt;</string>
+	<string> [&lt;#view#&gt; mas_makeConstraints:^(MASConstraintMaker *make) {
+     &lt;#contetn#&gt;
+    }];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>824AAAAF-1890-4148-9341-CBF65833F4ED</string>
+	<string>545BC1A6-D959-4DA6-BC8A-34FE6147CE46</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Swift Mark</string>
+	<string>jzmasmake</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift Mark</string>
+	<string>JZ masnory - 自动布局</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

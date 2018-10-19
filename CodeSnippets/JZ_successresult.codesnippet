@@ -3,19 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>setFrame_QMUI</string>
+	<string>jzsuccessresult</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>&lt;#view#&gt;.frame = CGRectMake(&lt;#CGFloat x#&gt;, &lt;#CGFloat y#&gt;,&lt;#CGFloat width#&gt;,&lt;#CGFloat height#&gt;);</string>
+	<string>        &lt;#content#&gt;
+        int statusCode = [responseObject[@"statusCode"] intValue];
+        int errorCode = [responseObject[@"error"] intValue];
+        if (statusCode == 1) {
+            &lt;#content#&gt;
+        }else{
+    [weakSelf checkStatusCode:errorCode message:responseObject[@"message"]];
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>0E66F758-D976-483F-A71A-1B94A8ADA34A</string>
+	<string>A74EF769-BEA6-48EE-8C38-E1B8DF912D00</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Quick status Code </string>
 	<key>IDECodeSnippetTitle</key>
-	<string>set UIView frame </string>
+	<string>Quick status Code </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

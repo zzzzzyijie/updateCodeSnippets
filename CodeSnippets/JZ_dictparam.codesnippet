@@ -3,20 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzstrong</string>
+	<string>jzdictparam</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/** &lt;#content#&gt; */
-@property (nonatomic,strong) &lt;#type#&gt; *&lt;#name#&gt;;</string>
+	<string>NSMutableDictionary *param = [NSMutableDictionary dictionary];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>BDED5703-1EDC-4BC2-A6C2-D3A4F8D31A5F</string>
+	<string>79E62284-8804-45BC-8C35-21AE97CF1146</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>jzdict quick dictionary</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>strong</string>
+	<string>jzdict quick dictionary</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
