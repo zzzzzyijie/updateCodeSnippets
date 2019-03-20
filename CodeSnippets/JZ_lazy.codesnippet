@@ -9,8 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- &lt;#name#&gt;
-{
+	<string>- &lt;#name#&gt; {
     if (!_&lt;#name#&gt;) {
         _&lt;#name#&gt; = &lt;#other#&gt;;
     }

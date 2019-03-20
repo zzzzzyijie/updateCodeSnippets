@@ -10,14 +10,14 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>UIButton *&lt;#name#&gt; = ({
-    UIButton *&lt;#name#&gt; = [[UIButton alloc] init];
-    &lt;#name#&gt;;
+    UIButton *button = [[UIButton alloc] init];
+    button;
 });
 [&lt;#view#&gt; addSubview:&lt;#name#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>5A88174D-4182-4FEC-9FA9-DFF0DDB112B6</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>jzquickbutton</string>
 	<key>IDECodeSnippetTitle</key>

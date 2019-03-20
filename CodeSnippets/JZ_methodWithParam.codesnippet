@@ -3,21 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzformat</string>
+	<string>jzmethodwithparam</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[NSString stringWithFormat:&lt;#(nonnull NSString *), ...#&gt;];</string>
+	<string>- (void)&lt;#methodName#&gt;:(&lt;#type#&gt;)&lt;#name#&gt; {
+    &lt;#content#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9647B51E-0B0F-449A-B5F3-C7CA23E2F6B2</string>
+	<string>E90CAAC8-41BB-4DF6-B4A2-2507996646FE</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>JZFormat</string>
+	<string>快速创建带参数的方法</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>stringFormat</string>
+	<string>JZ_methodWithParam</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
