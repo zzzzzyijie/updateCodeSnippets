@@ -3,23 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzquickimageview</string>
+	<string>jzenum</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UIImageView *&lt;#name#&gt; = ({
-    UIImageView *imageView = [DDUIHelper generalImageView];
-    [&lt;#view#&gt; addSubview:imageView];
-    imageView;
-});</string>
+	<string>typedef NS_ENUM(NSInteger,&lt;#type#&gt;){
+&lt;#value1#&gt;,    
+&lt;#value2#&gt;         
+};</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>84462E67-2F7D-47C1-AB06-998787F08733</string>
+	<string>5FCE5369-FA4F-454D-BB43-1F9EEEDC2437</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>枚举的定义</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Quick init ImageView</string>
+	<string>NS_ENUM_Def</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

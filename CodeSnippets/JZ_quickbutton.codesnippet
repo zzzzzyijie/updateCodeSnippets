@@ -10,10 +10,10 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>UIButton *&lt;#name#&gt; = ({
-    UIButton *button = [[UIButton alloc] init];
+    JZUIButton *button = [DDUIHelper generalButton];
+    [&lt;#view#&gt; addSubview:button];
     button;
-});
-[&lt;#view#&gt; addSubview:&lt;#name#&gt;];</string>
+});</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>5A88174D-4182-4FEC-9FA9-DFF0DDB112B6</string>
 	<key>IDECodeSnippetLanguage</key>

@@ -3,26 +3,31 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>bbsuccess</string>
+	<string>ddrequest</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> [weakSelf jz_hide];
-        if ([HttpTool isSuccess:responseObject]) {
-            
-        }else{
-            [weakSelf jz_showHint:responseObject[@"message"]];
-        }</string>
+	<string>    JZWeakSelf;
+    [self dd_loadWithText:nil];
+    NSMutableDictionary *param = [NSMutableDictionary dictionary];
+    param[@"pid"] = @"";
+    [DDBaseAPI sendRequest:param success:^(id  _Nonnull responseObject) {
+        [weakSelf dd_hide];
+        NSDictionary *data = responseObject[@"data"];
+        
+    } failure:^(NSError * _Nonnull error) {
+        [weakSelf handleRequestError:error];
+    }];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FB5EE0B7-0820-4044-BD2B-8D6E4913E75C</string>
+	<string>BBBC49F0-C28E-41F3-8A52-10B48A8491FC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>请求成功的一般代码逻辑</string>
+	<string>网络请求</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>请求成功</string>
+	<string>DDRequest</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

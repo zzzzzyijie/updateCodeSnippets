@@ -10,10 +10,10 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>UILabel *&lt;#name#&gt; = ({
-    UILabel *label = [[UILabel alloc] init];
+    UILabel *label = [DDUIHelper generalLabel];
+    [&lt;#view#&gt; addSubview:label];
     label;
-});
-[&lt;#view#&gt; addSubview:&lt;#name#&gt;];</string>
+});</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>313AFC0E-7167-45EE-AABA-BCADCFF6FB56</string>
 	<key>IDECodeSnippetLanguage</key>

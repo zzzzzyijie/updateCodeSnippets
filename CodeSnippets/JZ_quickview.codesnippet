@@ -11,9 +11,9 @@
 	<key>IDECodeSnippetContents</key>
 	<string>UIView *&lt;#name#&gt; = ({
        UIView *view = [[UIView alloc] init];
+       [&lt;#view#&gt; addSubview:view];
         view;
-    });
-    [&lt;#view#&gt; addSubview:&lt;#name#&gt;];</string>
+    });</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>B43F0A01-B5EF-4ABF-9F6F-DA4E919E7187</string>
 	<key>IDECodeSnippetLanguage</key>

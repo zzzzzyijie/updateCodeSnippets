@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ddtableview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UITableView *)containerTableView {
+    if (!_containerTableView) {
+        UITableView *containerTableView = ({
+            UITableView *tableView = [DDUIHelper generalTableViewWithStyle:UITableViewStyleGrouped];
+            //tableView.separatorStyle = UITableViewCellSelectionStyleNone;
+            tableView.backgroundColor = AppBackgroundColor;
+            tableView.dataSource = self;
+            tableView.delegate = self;
+            //[tableView registerClass:[DDMineBaseCell class] forCellReuseIdentifier:[DDMineBaseCell cellIdentiy]];
+            //[tableView registerClass:[DDMineHeaderCell class] forCellReuseIdentifier:[DDMineHeaderCell cellIdentiy]];
+            //[tableView registerNib:[UINib nibWithNibName:[DDBankCardCell cellIdentiy] bundle:nil] forCellReuseIdentifier:[DDBankCardCell cellIdentiy]];
+            tableView.tableFooterView = UIView.new;
+            [self.view addSubview:tableView];
+            [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+                if (@available(iOS 11.0, *)) {
+                    NSLayoutConstraint *top = [tableView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor];
+                    NSLayoutConstraint *bottom = [tableView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor];
+                    NSLayoutConstraint *left = [tableView.leftAnchor constraintEqualToAnchor:self.view.leftAnchor];
+                    NSLayoutConstraint *right = [tableView.rightAnchor constraintEqualToAnchor:self.view.rightAnchor];
+                    [NSLayoutConstraint activateConstraints:@[top, bottom, left, right]];
+                } else {
+                    make.edges.equalTo(self.view);
+                }
+            }];
+            tableView;
+        });
+        _containerTableView = containerTableView;
+    }
+    return _containerTableView;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1EDD002A-8A0D-4DEF-9CE5-1BFC40005BF0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>快速创建TableView</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>DD_TableView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

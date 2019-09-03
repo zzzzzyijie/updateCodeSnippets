@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ddcollection</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UICollectionView *)collectionView {
+    if (!_collectionView) {
+        _collectionView = ({
+            DDCollectionConfig *config = [[DDCollectionConfig alloc] init];
+            CGFloat space = 5;
+            config.scrollDirection = UICollectionViewScrollDirectionVertical; // 滚动方向
+            config.insetForSection = UIEdgeInsetsMake(space, space, space, space);
+            config.minimumLineSpacing = space;
+            config.minimumInteritemSpacing = space;
+            config.rowCount = 3;
+            config.itemHeight = &lt;#value#&gt;;
+            config.contentWidth = self.view.jz_width;
+            UICollectionView *collectionView = [DDUIHelper generalFlowLayoutCollectionViewWithConfig:config];
+            [collectionView registerClass:[&lt;#class#&gt; class] forCellWithReuseIdentifier:[&lt;#class#&gt; cellIdentiy]];
+            collectionView.backgroundColor = AppBackgroundColor;
+            collectionView.alwaysBounceVertical = YES;
+            collectionView.dataSource = self;
+            collectionView.delegate = self;
+            [self setRefreshWithScrollView:collectionView];
+            [self setEmptyDataWithScrollView:collectionView];
+            [self.view addSubview:collectionView];
+            [collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+                if (@available(iOS 11.0, *)) {
+                    NSLayoutConstraint *top = [collectionView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor];
+                    NSLayoutConstraint *bottom = [collectionView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor];
+                    NSLayoutConstraint *left = [collectionView.leftAnchor constraintEqualToAnchor:self.view.leftAnchor];
+                    NSLayoutConstraint *right = [collectionView.rightAnchor constraintEqualToAnchor:self.view.rightAnchor];
+                    [NSLayoutConstraint activateConstraints:@[top, bottom, left, right]];
+                } else {
+                    make.edges.equalTo(self.view);
+                }
+            }];
+            collectionView;
+        });
+    }
+    return _collectionView;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>762EA0D2-D860-4ED8-BCA0-0E5196DF2649</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>collection's </string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Quick Create CollectionView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
