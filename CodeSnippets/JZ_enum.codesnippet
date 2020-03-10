@@ -3,23 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzmethodwithparam</string>
+	<string>jzenum</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#methodName#&gt;:(&lt;#type#&gt;)&lt;#name#&gt; {
-    &lt;#content#&gt;
-}</string>
+	<string>typedef NS_ENUM(NSInteger,&lt;#type#&gt;){
+&lt;#value1#&gt;,    
+&lt;#value2#&gt;         
+};</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E90CAAC8-41BB-4DF6-B4A2-2507996646FE</string>
+	<string>5FCE5369-FA4F-454D-BB43-1F9EEEDC2437</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>快速创建带参数的方法</string>
+	<string>枚举的定义</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>JZ_methodWithParam</string>
+	<string>NS_ENUM_Def</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

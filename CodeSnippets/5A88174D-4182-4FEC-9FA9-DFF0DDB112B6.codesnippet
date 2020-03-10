@@ -10,10 +10,17 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>UIButton *&lt;#name#&gt; = ({
+<<<<<<< HEAD:CodeSnippets/5A88174D-4182-4FEC-9FA9-DFF0DDB112B6.codesnippet
     UIButton *button = [[UIButton alloc] init];
     button;
 });
 [&lt;#view#&gt; addSubview:&lt;#name#&gt;];</string>
+=======
+    JZUIButton *button = [DDUIHelper generalButton];
+    [&lt;#view#&gt; addSubview:button];
+    button;
+});</string>
+>>>>>>> 609d2d1b92c16d91f88725b84bda0b651fbf4346:CodeSnippets/JZ_quickbutton.codesnippet
 	<key>IDECodeSnippetIdentifier</key>
 	<string>5A88174D-4182-4FEC-9FA9-DFF0DDB112B6</string>
 	<key>IDECodeSnippetLanguage</key>

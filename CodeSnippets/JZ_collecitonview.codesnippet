@@ -9,32 +9,36 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>JZCollectionView *collectionView = ({
-        // 靠左排列的布局Layout
-        UICollectionViewLeftAlignedLayout *layout = [[UICollectionViewLeftAlignedLayout alloc] init];
-        NSInteger colNums = 3; // 每行cell的个数
-        CGFloat spacing = 10; // 统一的间距
-        CGFloat cellW = (SCREEN_WIDTH - (colNums + 1.5) * spacing) / colNums; // 宽度 (1.5为控制边界值)
-        CGFloat cellH = 30; // 高度
-        layout.itemSize = CGSizeMake(cellW, cellH);
-        layout.minimumInteritemSpacing = spacing; // 设置cell之间间距
-        layout.minimumLineSpacing = spacing; // 设置行距
-        layout.sectionInset = UIEdgeInsetsMake(5, spacing, 5, spacing);// 设置每一组的内间距
-        layout.scrollDirection = UICollectionViewScrollDirectionVertical; // 滚动方向
+	<string>
+self.collectionView = ({
+    // 靠左排列的布局Layout
+    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    layout.scrollDirection = UICollectionViewScrollDirectionVertical; // 滚动方向
+    layout.sectionInset = self.insetForSection;
+    layout.minimumLineSpacing = self.minimumLineSpacing;
+    layout.minimumInteritemSpacing = self.minimumInteritemSpacing;
+    CGFloat lineSpaceW = (self.rowCount - 1) * self.minimumInteritemSpacing;
+    CGFloat selfW = JZScreenWidth; // CGRectGetWidth(self.contentView.bounds) --&gt; 这样不行 取到的是  frame = (0 0; 320 44)
+    CGFloat itemW = (selfW-(self.insetForSection.left + self.insetForSection.right)-lineSpaceW)/self.rowCount;
+    self.itemHeight = itemW;
+    layout.itemSize = CGSizeMake(floor(itemW), floor(self.itemHeight));
+    layout.scrollDirection = UICollectionViewScrollDirectionVertical; // 滚动方向
+    
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+    collectionView.backgroundColor = JZColorWhite;
+    collectionView.delegate = self;
+    collectionView.dataSource = self;
+    collectionView.allowsSelection = YES;
+    collectionView.delaysContentTouches = NO;
+    collectionView.alwaysBounceVertical = YES;
+    collectionView.showsVerticalScrollIndicator = YES;
+    collectionView.showsHorizontalScrollIndicator = YES;
+    [&lt;#contentView#&gt; addSubview:collectionView];
+    [collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        JZCollectionView *collectionView = [[JZCollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
-        self.collectionView = collectionView;
-        collectionView.backgroundColor = JZWHITE;
-        collectionView.delegate = self;
-        collectionView.dataSource = self;
-        collectionView.allowsSelection = YES;
-        collectionView.delaysContentTouches = NO;
-        collectionView.alwaysBounceVertical = YES;
-        collectionView.showsVerticalScrollIndicator = YES;
-        collectionView.showsHorizontalScrollIndicator = YES;
-        collectionView;
-    });
-</string>
+    }];
+    collectionView;
+    });</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>546AFA6D-544A-42D1-B678-0D6E27F6A05A</string>
 	<key>IDECodeSnippetLanguage</key>

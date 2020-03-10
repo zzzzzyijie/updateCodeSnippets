@@ -3,23 +3,31 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzmethod</string>
+	<string>ddrequest</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)&lt;#methodName#&gt; {
-    &lt;#content#&gt;
-}</string>
+	<string>    JZWeakSelf;
+    [self dd_loadWithText:nil];
+    NSMutableDictionary *param = [NSMutableDictionary dictionary];
+    param[@"pid"] = @"";
+    [DDBaseAPI sendRequest:param success:^(id  _Nonnull responseObject) {
+        [weakSelf dd_hide];
+        NSDictionary *data = responseObject[@"data"];
+        
+    } failure:^(NSError * _Nonnull error) {
+        [weakSelf handleRequestError:error];
+    }];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>2436D676-8893-46A7-BBA1-6AB942CF8A63</string>
+	<string>BBBC49F0-C28E-41F3-8A52-10B48A8491FC</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>快速创建没有返回值的方法</string>
+	<string>网络请求</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>JZ_voidMehod</string>
+	<string>DDRequest</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

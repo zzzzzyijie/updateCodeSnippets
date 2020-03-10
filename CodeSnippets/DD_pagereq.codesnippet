@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ddpagereq</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    JZWeakSelf;
+    [self dd_loadWithText:nil];
+    NSMutableDictionary *param = [NSMutableDictionary dictionary];
+    param[@"pid"] = @"&lt;#pid#&gt;";
+    param[@"page"] = @(self.page);
+    param[@"limit"] = @(self.limit);
+    [DDBaseAPI sendRequest:param success:^(id  _Nonnull responseObject) {
+        [weakSelf dd_hide];
+        NSArray *list = responseObject[@"data"][@"list"];
+        NSArray *modelArray = [NSArray yy_modelArrayWithClass:[&lt;#model#&gt; class] json:list];
+        if (weakSelf.page == 1) { // 第一页
+            weakSelf.resultArray = [NSMutableArray arrayWithArray:modelArray];
+            [weakSelf.containerTableView reloadData];
+            if (modelArray.count &lt; weakSelf.limit) {
+                weakSelf.containerTableView.mj_footer.hidden = YES;
+            }else {
+                weakSelf.containerTableView.mj_footer.hidden = NO;
+            }
+        }else{ // 更多
+            if (modelArray.count &gt; 0) { // 有数据
+                [weakSelf.resultArray addObjectsFromArray:modelArray];
+                [weakSelf.containerTableView reloadData];
+            }else { // 没数据
+                weakSelf.containerTableView.mj_footer.hidden = YES;
+            }
+        }
+        [weakSelf dd_hide];
+        weakSelf.hasLoad = YES;
+        [weakSelf.containerTableView.mj_header endRefreshing];
+        [weakSelf.containerTableView.mj_footer endRefreshing];
+    } failure:^(NSError * _Nonnull error) {
+        weakSelf.hasLoad = YES;
+        [weakSelf.containerTableView.mj_header endRefreshing];
+        [weakSelf.containerTableView.mj_footer endRefreshing];
+        [weakSelf handleRequestError:error];
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>93FC2F61-E258-41DC-A778-0FBF32E1324E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>带分页的request</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>DD Page Request</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
