@@ -10,8 +10,8 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>UIImageView *&lt;#name#&gt; = ({
-    UIImageView *&lt;#name#&gt; = [[UIImageView alloc] init];
-    &lt;#name#&gt;;
+    UIImageView *imageView = [[UIImageView alloc] init];
+    imageView;
 });
 [&lt;#view#&gt; addSubview:&lt;#name#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>

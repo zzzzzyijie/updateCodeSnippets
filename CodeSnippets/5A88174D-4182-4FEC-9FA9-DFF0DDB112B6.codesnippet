@@ -3,26 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>bbsuccess</string>
+	<string>jzquickbutton</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string> [weakSelf jz_hide];
-        if ([HttpTool isSuccess:responseObject]) {
-            
-        }else{
-            [weakSelf jz_showHint:responseObject[@"message"]];
-        }</string>
+	<string>UIButton *&lt;#name#&gt; = ({
+    UIButton *button = [[UIButton alloc] init];
+    button;
+});
+[&lt;#view#&gt; addSubview:&lt;#name#&gt;];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>FB5EE0B7-0820-4044-BD2B-8D6E4913E75C</string>
+	<string>5A88174D-4182-4FEC-9FA9-DFF0DDB112B6</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>请求成功的一般代码逻辑</string>
+	<string>jzquickbutton</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>请求成功</string>
+	<string>jzquickbutton</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

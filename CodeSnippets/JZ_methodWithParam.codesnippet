@@ -3,25 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzquickbutton</string>
+	<string>jzmethodwithparam</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UIButton *&lt;#name#&gt; = ({
-    UIButton *&lt;#name#&gt; = [[UIButton alloc] init];
-    &lt;#name#&gt;;
-});
-[&lt;#view#&gt; addSubview:&lt;#name#&gt;];</string>
+	<string>- (void)&lt;#methodName#&gt;:(&lt;#type#&gt;)&lt;#name#&gt; {
+    &lt;#content#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5A88174D-4182-4FEC-9FA9-DFF0DDB112B6</string>
+	<string>E90CAAC8-41BB-4DF6-B4A2-2507996646FE</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>jzquickbutton</string>
+	<string>快速创建带参数的方法</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>jzquickbutton</string>
+	<string>JZ_methodWithParam</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

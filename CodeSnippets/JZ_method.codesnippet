@@ -3,28 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzsuccessresult</string>
+	<string>jzmethod</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        &lt;#content#&gt;
-        int statusCode = [responseObject[@"statusCode"] intValue];
-        int errorCode = [responseObject[@"error"] intValue];
-        if (statusCode == 1) {
-            &lt;#content#&gt;
-        }else{
-    [weakSelf checkStatusCode:errorCode message:responseObject[@"message"]];
+	<string>- (void)&lt;#methodName#&gt; {
+    &lt;#content#&gt;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A74EF769-BEA6-48EE-8C38-E1B8DF912D00</string>
+	<string>2436D676-8893-46A7-BBA1-6AB942CF8A63</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Quick status Code </string>
+	<string>快速创建没有返回值的方法</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Quick status Code </string>
+	<string>JZ_voidMehod</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
