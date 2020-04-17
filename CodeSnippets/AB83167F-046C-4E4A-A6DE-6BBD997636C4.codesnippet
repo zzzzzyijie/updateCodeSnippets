@@ -3,24 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzenum</string>
+	<string>snpmake</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>typedef NS_ENUM(NSInteger,&lt;#type#&gt;){
-&lt;#value1#&gt;,    
-&lt;#value2#&gt;         
-};</string>
+	<string>   &lt;#view#&gt;.snp.makeConstraints { (make) in
+    &lt;#code#&gt;
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5FCE5369-FA4F-454D-BB43-1F9EEEDC2437</string>
+	<string>AB83167F-046C-4E4A-A6DE-6BBD997636C4</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>枚举的定义</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NS_ENUM_Def</string>
+	<string>SnpMake</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

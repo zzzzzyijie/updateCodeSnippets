@@ -3,25 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzquicklabel</string>
+	<string>lazyimgview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UILabel *&lt;#name#&gt; = ({
-    UILabel *label = [[UILabel alloc] init];
-    label;
-});
-[&lt;#view#&gt; addSubview:&lt;#name#&gt;];</string>
+	<string>lazy var &lt;#name#&gt;: UIImageView = {
+        let view = UIImageView()
+        return view
+    }()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>313AFC0E-7167-45EE-AABA-BCADCFF6FB56</string>
+	<string>44C80A91-E6CF-4DCD-9048-660F818A4338</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>jzquicklabel</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>jzquicklabel</string>
+	<string>LazyImageView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

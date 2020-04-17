@@ -3,21 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzmark</string>
+	<string>lazybutton</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: - &lt;#content#&gt; ----------------------------</string>
+	<string>    lazy var buttonw: UIButton = {
+        let button = UIButton(type: .custom)
+        button.setTitleColor(.darkGray, for: .normal)
+        button.setTitle("", for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        //button.setBackgroundImage(&lt;#T##image: UIImage?##UIImage?#&gt;, for: &lt;#T##UIControl.State#&gt;)
+        //button.setImage(&lt;#T##image: UIImage?##UIImage?#&gt;, for: &lt;#T##UIControl.State#&gt;)
+        return button
+    }()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>824AAAAF-1890-4148-9341-CBF65833F4ED</string>
+	<string>6C2C8598-D789-428C-927B-62393EB05647</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Swift Mark</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift Mark</string>
+	<string>LazyButton</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

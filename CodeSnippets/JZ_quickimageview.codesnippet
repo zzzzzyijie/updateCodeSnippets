@@ -17,7 +17,9 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>84462E67-2F7D-47C1-AB06-998787F08733</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>Quick init ImageView</string>
 	<key>IDECodeSnippetUserSnippet</key>

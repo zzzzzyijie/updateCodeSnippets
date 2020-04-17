@@ -42,7 +42,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>1EDD002A-8A0D-4DEF-9CE5-1BFC40005BF0</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>快速创建TableView</string>
 	<key>IDECodeSnippetTitle</key>

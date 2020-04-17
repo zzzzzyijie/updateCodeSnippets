@@ -3,28 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzquicklabel</string>
+	<string>randomcolor</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UILabel *&lt;#name#&gt; = ({
-    UILabel *label = [[UILabel alloc] init];
-    label;
-});
-[&lt;#view#&gt; addSubview:&lt;#name#&gt;];</string>
+	<string>[UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>313AFC0E-7167-45EE-AABA-BCADCFF6FB56</string>
+	<string>8D29015C-B951-4BB6-97B3-6CEE47ED7444</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>jzquicklabel</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>jzquicklabel</string>
+	<string>随机颜色</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

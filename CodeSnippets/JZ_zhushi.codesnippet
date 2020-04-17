@@ -9,8 +9,9 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>/** 
- *  &lt;#content#&gt; 
+	<string>// ------------------------------------------------------------------------------------------------------------
+/*
+ *  &lt;#content#&gt;
  */</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>B3B251E3-5098-464D-95B2-53FA66B7E7DA</string>

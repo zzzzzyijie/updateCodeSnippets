@@ -3,21 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzmark</string>
+	<string>lazytableview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>// MARK: - &lt;#content#&gt; ----------------------------</string>
+	<string>    lazy var contentTableView: UITableView = {
+        let tableView = UITableView(frame: .zero, style: .plain)
+        tableView.dataSource = self
+        tableView.delegate = self
+        //tableView.registerCell(type: UITableViewCell.self)
+        tableView.rowHeight = 100
+        tableView.separatorStyle = .none
+        tableView.tableFooterView = UIView()
+        return tableView
+    }()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>824AAAAF-1890-4148-9341-CBF65833F4ED</string>
+	<string>AB7733F8-A001-4A19-AA45-91767FFE3D7E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>Swift Mark</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Swift Mark</string>
+	<string>LazyTableView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

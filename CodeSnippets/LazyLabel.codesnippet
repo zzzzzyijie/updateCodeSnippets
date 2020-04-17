@@ -3,25 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzquicklabel</string>
+	<string>lazylabel</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UILabel *&lt;#name#&gt; = ({
-    UILabel *label = [[UILabel alloc] init];
-    label;
-});
-[&lt;#view#&gt; addSubview:&lt;#name#&gt;];</string>
+	<string>    lazy var &lt;#nameLabel#&gt;: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 17)
+        label.textAlignment = .left
+        label.textColor = .darkGray
+        return label
+    }()</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>313AFC0E-7167-45EE-AABA-BCADCFF6FB56</string>
+	<string>5BCD2C46-FDDE-42A7-9540-0077F0FF4DA7</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>jzquicklabel</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>jzquicklabel</string>
+	<string>LazyLabel</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

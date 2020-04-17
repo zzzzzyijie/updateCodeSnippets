@@ -48,7 +48,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>93FC2F61-E258-41DC-A778-0FBF32E1324E</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>带分页的request</string>
 	<key>IDECodeSnippetTitle</key>

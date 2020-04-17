@@ -23,7 +23,7 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>BBBC49F0-C28E-41F3-8A52-10B48A8491FC</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>网络请求</string>
 	<key>IDECodeSnippetTitle</key>
