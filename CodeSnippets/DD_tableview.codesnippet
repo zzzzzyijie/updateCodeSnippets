@@ -12,7 +12,7 @@
 	<string>- (UITableView *)containerTableView {
     if (!_containerTableView) {
         UITableView *containerTableView = ({
-            UITableView *tableView = [DDUIHelper generalTableViewWithStyle:UITableViewStyleGrouped];
+            UITableView *tableView = [JZUIHelper createTableViewWithStyle:UITableViewStyleGrouped];
             //tableView.separatorStyle = UITableViewCellSelectionStyleNone;
             tableView.backgroundColor = AppBackgroundColor;
             tableView.dataSource = self;

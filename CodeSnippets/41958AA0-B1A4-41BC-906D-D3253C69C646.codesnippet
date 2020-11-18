@@ -3,25 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzquickbutton</string>
+	<string></string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>JZUIButton *&lt;#name#&gt; = ({
-     JZUIButton *button = [JZUIHelper createButton];
-    button;
-});
-[&lt;#view#&gt; addSubview:&lt;#name#&gt;];</string>
+	<string>  App.skey = @"U1%2FOIwAfq3g27qEJ8BhUcyMXZ9xYbjzaT7Vi0%2BRLCGKICOC2nJjc4Q%3D%3D"; // test99</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5A88174D-4182-4FEC-9FA9-DFF0DDB112B6</string>
+	<string>41958AA0-B1A4-41BC-906D-D3253C69C646</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>jzquickbutton</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>jzquickbutton</string>
+	<string>My Code Snippet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

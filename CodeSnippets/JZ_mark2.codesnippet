@@ -9,15 +9,15 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark - ============== &lt;#content#&gt; ============</string>
+	<string>#pragma mark - =================== &lt;#content#&gt; ===================</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>5C17044C-DF6E-4FB9-B72D-6EF4470CE671</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>分割线注释</string>
+	<string>Mark 分割线注释</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>分割线注释</string>
+	<string>Mark 分割线注释</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

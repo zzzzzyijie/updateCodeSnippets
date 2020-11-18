@@ -10,10 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>    lazy var &lt;#nameLabel#&gt;: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 17)
-        label.textAlignment = .left
-        label.textColor = .darkGray
+        let label = AppUI.createUIlabel(font: &lt;#T##UIFont#&gt;, textColor: &lt;#T##UIColor#&gt;)
         return label
     }()</string>
 	<key>IDECodeSnippetIdentifier</key>

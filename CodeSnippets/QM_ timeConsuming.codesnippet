@@ -3,25 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzquickbutton</string>
+	<string>qmtimeConsuming</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>JZUIButton *&lt;#name#&gt; = ({
-     JZUIButton *button = [JZUIHelper createButton];
-    button;
-});
-[&lt;#view#&gt; addSubview:&lt;#name#&gt;];</string>
+	<string>        CFTimeInterval startTime = CACurrentMediaTime();
+        
+        CFTimeInterval endTime = CACurrentMediaTime();
+        CFTimeInterval consumingTime = endTime - startTime;
+        NSLog(@"耗时：%@", @(consumingTime));</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5A88174D-4182-4FEC-9FA9-DFF0DDB112B6</string>
+	<string>E8A668DB-9245-4F28-B239-6C51B8C7FFD3</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>jzquickbutton</string>
+	<string>QM_timeConsuming</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>jzquickbutton</string>
+	<string>QM_timeConsuming</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

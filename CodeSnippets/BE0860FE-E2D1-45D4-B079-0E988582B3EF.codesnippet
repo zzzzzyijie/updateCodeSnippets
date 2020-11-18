@@ -3,25 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jzquickbutton</string>
+	<string>ddimage</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>JZUIButton *&lt;#name#&gt; = ({
-     JZUIButton *button = [JZUIHelper createButton];
-    button;
-});
-[&lt;#view#&gt; addSubview:&lt;#name#&gt;];</string>
+	<string>UIImage *image = [UIImage imageNamed:@"&lt;#content#&gt;"];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5A88174D-4182-4FEC-9FA9-DFF0DDB112B6</string>
+	<string>BE0860FE-E2D1-45D4-B079-0E988582B3EF</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>jzquickbutton</string>
+	<string>创建本地UIImage</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>jzquickbutton</string>
+	<string>创建本地UIImage</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

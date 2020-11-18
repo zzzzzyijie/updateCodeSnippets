@@ -10,7 +10,7 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>UIImageView *&lt;#name#&gt; = ({
-    UIImageView *imageView = [[UIImageView alloc] init];
+    UIImageView *imageView = [JZUIHelper createImageView];
     imageView;
 });
 [&lt;#view#&gt; addSubview:&lt;#name#&gt;];</string>

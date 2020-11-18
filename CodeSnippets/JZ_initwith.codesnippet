@@ -3,28 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>initWithStyleForCell</string>
+	<string>jzintiwith</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
-    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        &lt;#code#&gt;
+	<string>- (instancetype)initWith&lt;#content#&gt; {
+    self = [super init];
+    if (self) {
+      
     }
     return self;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>BF5695D8-5243-4DC2-8153-82B8858295AC</string>
+	<string>A62641AA-C1D8-4C4B-A681-874DF618C315</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetPlatformFamily</key>
-	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>UITableViewCell的默认初始化方法</string>
+	<string>JZ_intiWith</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>initWithStyle:reuseIdentifier:</string>
+	<string>JZ_intiWith</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

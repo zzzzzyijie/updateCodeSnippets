@@ -9,11 +9,9 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    lazy var buttonw: UIButton = {
-        let button = UIButton(type: .custom)
-        button.setTitleColor(.darkGray, for: .normal)
+	<string>    lazy var buttonw: FitButton = {
+        let button = AppUI.createUIButton(font: &lt;#T##UIFont#&gt;, titleColor: &lt;#T##UIColor#&gt;)
         button.setTitle("", for: .normal)
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         //button.setBackgroundImage(&lt;#T##image: UIImage?##UIImage?#&gt;, for: &lt;#T##UIControl.State#&gt;)
         //button.setImage(&lt;#T##image: UIImage?##UIImage?#&gt;, for: &lt;#T##UIControl.State#&gt;)
         return button
