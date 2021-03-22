@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    lazy var buttonw: FitButton = {
+	<string>    private lazy var buttonw: FitButton = {
         let button = AppUI.createUIButton(font: &lt;#T##UIFont#&gt;, titleColor: &lt;#T##UIColor#&gt;)
         button.setTitle("", for: .normal)
         //button.setBackgroundImage(&lt;#T##image: UIImage?##UIImage?#&gt;, for: &lt;#T##UIControl.State#&gt;)

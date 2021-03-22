@@ -9,7 +9,7 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>lazy var &lt;#name#&gt;: UIImageView = {
+	<string>    private lazy var &lt;#name#&gt;: UIImageView = {
         let view = UIImageView()
         return view
     }()</string>

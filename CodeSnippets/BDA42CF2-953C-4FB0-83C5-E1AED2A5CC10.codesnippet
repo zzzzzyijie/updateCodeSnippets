@@ -3,24 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>lazylabel</string>
+	<string>guardself</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    private lazy var &lt;#nameLabel#&gt;: UILabel = {
-        let label = AppUI.createUIlabel(font: &lt;#T##UIFont#&gt;, textColor: &lt;#T##UIColor#&gt;)
-        return label
-    }()</string>
+	<string>guard let self = self else { return }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>5BCD2C46-FDDE-42A7-9540-0077F0FF4DA7</string>
+	<string>BDA42CF2-953C-4FB0-83C5-E1AED2A5CC10</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>Guard_Self</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>LazyLabel</string>
+	<string>Guard_Self</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
