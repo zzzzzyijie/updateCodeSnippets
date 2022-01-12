@@ -3,30 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>ColumnCodable String Class</string>
+	<string>ColumnCodable Double Class</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>class &lt;#Class name#&gt;: WCDBSwift.ColumnCodable {
-    typealias FundamentalType = String
+    typealias FundamentalType = Double
     
-    required init?(with value: String) {
+    required init?(with value: Double) {
         
     }
     
-    func archivedValue() -&gt; String? {
+    func archivedValue() -&gt; Double? {
         
     }
 }
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>BD03E1A2-9D1B-432B-B7B8-4AD3BC19023C</string>
+	<string>A1DBE9DA-4DEC-47A8-8FED-DED5FC1D8F1F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>ColumnCodable String Snippet</string>
+	<string>ColumnCodable Double Snippet</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
